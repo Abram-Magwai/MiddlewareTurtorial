@@ -1,0 +1,16 @@
+﻿@model Login;
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<form asp-action="SignIn">
+    <label asp-for="Username" class="form-label"></label>
+    <div class="form-group">
+        <input type="text" asp-for="Username" class="form-control" />
+    </div>
+    <label asp-for="Password" class="form-label"></label>
+    <div class="form-group mb-4">
+        <input type="text" asp-for="Password" class="form-control" />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Login">
+</form>
